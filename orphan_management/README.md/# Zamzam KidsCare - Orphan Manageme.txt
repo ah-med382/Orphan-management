@@ -1,0 +1,32 @@
+# Zamzam KidsCare - Orphan Management & Donation System
+
+Zamzam KidsCare is a modern web application designed to manage orphan care, handle sponsorships, register donations with central finance ledger accounts, and process adoption applications.
+
+## Prerequisites
+- **XAMPP** (Apache and MySQL)
+- **PHP 7.4 or higher**
+
+## Setup Instructions
+
+1. **Place Project Files**:
+   Clone or extract this repository into your XAMPP web directory:
+   `C:\xampp\htdocs\orphan_management`
+
+2. **Import the Database**:
+   - Open XAMPP Control Panel and start **Apache** and **MySQL**.
+   - Go to `http://localhost/phpmyadmin/` in your browser.
+   - Create a new database named `orphan_management`.
+   - Select the database, click the **Import** tab, choose the database backup file located at `database/orphan_management.sql`, and click **Import/Go**.
+
+3. **Database Configuration**:
+   - The database configuration is stored in `config/db.php`.
+   - Ensure the database connection username (`root`) and password match your local XAMPP configuration.
+
+4. **Accessing the Portal**:
+   - Open your browser and navigate to: `http://localhost/orphan_management/login.php`
+   - **Sample Admin Credentials**:
+     - **Email**: `admin@orphanage.com`
+     - **Password**: `password123`
+   - **Sample Donor Credentials**:
+     - **Email**: `john.doe@donor.com`
+     - **Password**: `password123`

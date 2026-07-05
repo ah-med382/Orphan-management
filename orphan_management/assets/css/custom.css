@@ -1,0 +1,51 @@
+/* 
+  OrphanCare - Custom Stylesheet
+  Additional project-specific overrides and utilities.
+  Most styling is handled via AdminLTE 3.2 CDN and inline <style> blocks in header.php.
+*/
+
+/* Utility: smooth page transitions */
+.content-wrapper {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover lift effect */
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Badge pill styles */
+.role-badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+
+/* Timeline connector */
+.timeline::before {
+  background-color: #e2e8f0 !important;
+}
+
+/* Print utility */
+@media print {
+  .main-sidebar,
+  .main-header,
+  .main-footer,
+  .no-print {
+    display: none !important;
+  }
+  .content-wrapper {
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+}
